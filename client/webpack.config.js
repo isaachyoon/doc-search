@@ -4,12 +4,13 @@ var config = {
    output: {
       path:'./',
       filename: 'index.js',
+      html: './index.html'
    },
 
-   devServer: {
-      inline: true,
-      port: 8080
-   },
+   // devServer: {
+   //    inline: true,
+   //    port: 8080
+   // },
 
    module: {
       loaders: [

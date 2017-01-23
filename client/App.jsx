@@ -6,14 +6,22 @@ import Nav from './nav.jsx';
 class App extends React.Component {
 
 	constructor(props){
-		super(props)
+		super(props);
+		this.state = {
+			searched: true
+		}
+		this.search = this.search.bind(this);
+	}
+
+	search(event) {
+		console.log('printing out searched event', event);
 	}
 
    render() {
       return (
          <div>
         	 <Title message={this.props.message} />
-        	 <Nav/>
+        	 <Nav search = {this.search}/>
          </div>
       );
    }
